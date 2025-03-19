@@ -1,0 +1,74 @@
+1 Aethersnatch
+1 Alania, Divergent Storm
+1 Aminatou's Augury
+1 Apex of Power
+1 Apprentice Wizard
+1 Arcane Signet
+1 Arcanis the Omnipotent
+1 Archaeomancer
+1 Asinine Antics
+1 Augur of Bolas
+1 Azami, Lady of Scrolls
+1 Big Score
+1 Boon of the Wish-Giver
+1 Brass's Bounty
+1 Change of Plans
+1 Clever Conjurer
+1 Clone Legion
+1 Comet Storm
+1 Command Tower
+1 Confounding Riddle
+1 Counterspell
+1 Crackle with Power
+1 Dance with Calamity
+1 Distant Melody
+1 Double Vision
+1 Dual Casting
+1 Dualcaster Mage
+1 Electrodominance
+1 Elminster's Simulacrum
+1 Faerie Seer
+1 Gadwick, the Wizened
+1 Gale, Waterdeep Prodigy
+1 Galvanic Iteration
+1 Goblin Electromancer
+1 Hit the Mother Lode
+1 Hunted by The Family
+1 Increasing Vengeance
+1 Inspired Tinkering
+18 Island
+1 Izzet Boilerworks
+1 Izzet Signet
+1 Jaya's Immolating Inferno
+1 Krark, the Thumbless
+1 Mana Geyser
+1 Memory Deluge
+1 Mob Rule
+13 Mountain
+1 Mystic Confluence
+1 Naru Meha, Master Wizard
+1 Niv-Mizzet, Parun
+1 Nivix Guildmage
+1 Path of Ancestry
+1 Perplexing Test
+1 Portal Mage
+1 Prisoner's Dilemma
+1 Reinterpret
+1 Silundi Vision
+1 Spell Swindle
+1 Spelltwine
+1 Stonybrook Banneret
+1 Stormcatch Mentor
+1 Supreme Will
+1 Surge to Victory
+1 Swiftwater Cliffs
+1 Talisman of Creativity
+1 Temple of Epiphany
+1 Thassa's Intervention
+1 Unwind
+1 Volcanic Vision
+1 Windrider Wizard
+1 Wizard's Retort
+1 Wizards of Thay
+
+1 Kaza, Roil Chaser
