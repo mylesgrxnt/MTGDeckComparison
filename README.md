@@ -1,0 +1,1 @@
+This is a simple web application that returns the difference between two decklists for Magic the Gathering. I would constantly mess around with my decks on Moxfield and then forget what all I added and removed during the process, so I created this simple site that might solve that problem for others too.
