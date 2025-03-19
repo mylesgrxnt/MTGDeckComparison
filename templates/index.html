@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck Input</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .deck-textarea {
+            width: 100%;
+            height: 300px;
+            resize: vertical;
+        }
+        body {
+          min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="container mt-4">
+
+    <h1 class="mb-1">Magic the Gathering Deck Comparison Tool</h1>
+    <hr>
+    <p class="mb-5">Note: If copying from Moxfield, be sure to select "Copy for MTGO" when exporting the deck list, in order to ensure that the formatting is compatible!</p>
+
+    <form method="POST">
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <label for="starting_deck" class="form-label fw-bold">First Deck:</label>
+                <textarea class="form-control deck-textarea" id="starting_deck" name="starting_deck" 
+                          placeholder="12 Island
+4 Brainstorm
+4 Force of Will
+3 Jace, the Mind Sculptor
+...">{{ starting_deck }}</textarea>
+            </div>
+
+            <div class="col-md-6">
+                <label for="ending_deck" class="form-label fw-bold">Second Deck:</label>
+                <textarea class="form-control deck-textarea" id="ending_deck" name="ending_deck" 
+                          placeholder="12 Island
+4 Brainstorm
+4 Force of Will
+3 Jace, the Mind Sculptor
+1 Snapcaster Mage
+...">{{ ending_deck }}</textarea>
+            </div>
+        </div>
+
+        <div>
+            <button type="submit" class="btn btn-danger">Compare Decks</button>
+        </div>
+    </form>
+
+    <footer class="bg-body-tertiary text-center text-lg-start fixed-bottom">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2025 Copyright:
+        <a class="text-body" href="https://mylesgrxnt.github.io/">Myles Grant</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck Comparison Results</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        #copy-notification {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body class="container mt-4">
+
+    <h1 class="mb-4">Deck Comparison Results</h1>
+
+    <hr>
+  
+    <div class="d-flex mb-3 ">
+      <a href="/" class="btn btn-danger me-2">Back to Comparison</a>
+      <button class="btn btn-secondary" onclick="copyToClipboard()">Copy Added Cards</button>
+    </div>
+    <p id="copy-notification">Copied to Clipboard!</p>
+
+    <div class="row mb-4">
+        <!-- Added Cards -->
+        <div class="col-md-6">
+            <h4 class="text-success">Added Cards</h4>
+            <ul class="list-group">
+                {% for card in added_list %}
+                    <li class="list-group-item list-group-item-success">{{ card }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- Removed Cards -->
+        <div class="col-md-6">
+            <h4 class="text-danger">Removed Cards</h4>
+            <ul class="list-group">
+                {% for card in removed_list %}
+                    <li class="list-group-item list-group-item-danger">{{ card }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            const copyableList = {{ copyable_list | tojson }};
+            const textToCopy = copyableList.join("\n");
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const notification = document.getElementById("copy-notification");
+                notification.style.display = "block";
+                setTimeout(() => {
+                    notification.style.display = "none";
+                }, 2000);
+            }).catch(err => {
+                console.error("Failed to copy: ", err);
+            });
+        }
+    </script>
+
+</body>
+</html>
